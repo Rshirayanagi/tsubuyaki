@@ -1,0 +1,67 @@
+// Place all the styles related to the Top controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+header {
+  width: 100%;
+  background-color: #2ea8e6;
+  height: 54px;
+}
+
+header ul {
+  margin: 0 auto;
+  list-style: none;
+}
+
+header ul a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+}
+
+header li {
+  float: left;
+  width: auto;
+}
+
+header ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.main-header {
+  padding-bottom: 50%;
+  width: 100%;
+  background-size: cover;
+  background-image: url("birdpic.jpg");
+  background-attachment: scroll;
+}
+
+.thisis {
+  background-color: #a1cce6;
+  color: #999999;
+  padding: 80px;
+  padding-bottom: 150px
+}
+
+footer {
+  width: 100%;
+  background-color:#2996cc;
+  padding: 20px 0 10px 0;
+  color: white;
+  margin: auto;
+  padding-bottom: 10px;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  text-align: center;
+}
