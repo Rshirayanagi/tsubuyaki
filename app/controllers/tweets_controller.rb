@@ -6,11 +6,11 @@ class TweetsController < ApplicationController
   end
   
   def new
-      if params[:back]
-        @tweet = Tweet.new(tweets_params)
-      else
-        @tweet = Tweet.new
-      end
+    if params[:back]
+      @tweet = Tweet.new(tweets_params)
+    else
+      @tweet = Tweet.new
+    end
   end
   
   def create
@@ -27,11 +27,11 @@ class TweetsController < ApplicationController
   
   def update
     @tweet.update(tweets_params)
-        if @tweet.save
-          redirect_to tweets_path, notice: "編集しました！"
-        else
-          render 'edit'
-        end
+    if @tweet.save
+      redirect_to tweets_path, notice: "編集しました！"
+    else
+      render 'edit'
+    end
   end
   
   def destroy
